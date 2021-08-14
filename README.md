@@ -1,3 +1,3 @@
-# HTML and CSS Project 4: Components and Layout Patterns
+# Omnifood Project - A ready-made food subscription service website
 
-A series of webpage components coded with HTML and CSS.
+A single-page ready-made food subscription service website coded with HTML and CSS.
