@@ -23,7 +23,7 @@
 
 - Tints: #fdf2e9
 - Shades: #cf711f
-- Accents:
+- Accents: #51cf66, #94d82d, #ffd43b
 - Greys: #333, #555
 
 --- 03 IMAGES ---
@@ -86,6 +86,7 @@ body {
 }
 
 .subheading {
+  display: block;
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -99,10 +100,19 @@ body {
 .grid {
   display: grid;
   row-gap: 9.6rem;
+  column-gap: 6.4rem;
 }
 
 .grid--2-col {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
 }
 
 .flex {
@@ -116,8 +126,12 @@ body {
   padding: 0 4.8rem;
 }
 
-.grid--center-v {
-  align-items: center;
+.center-text {
+  text-align: center;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.6rem;
 }
 
 /********** COMPONENETS **********/
