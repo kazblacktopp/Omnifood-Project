@@ -4,29 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Omnifood</title>
   </head>
   <body>
-    <header class="section-navigation">
-      <nav class="nav flex">
-        <img src="img/omnifood-logo.png" alt="" class="nav-logo" />
-        <ul class="nav-link-list">
-          <li class="nav-links flex">
-            <a href="#" class="nav-link">How it works</a>
-            <a href="#" class="nav-link">Meals</a>
-            <a href="#" class="nav-link">Testimonials</a>
-            <a href="#" class="nav-link">Pricing</a>
-            <a href="#" class="nav-link btn btn-fill">Eat well today</a>
-          </li>
+    <header class="section-navigation flex">
+      <a href="#"
+        ><img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo"
+      /></a>
+      <nav>
+        <ul class="main-nav-list flex">
+          <li><a href="#" class="main-nav-link">How it works</a></li>
+          <li><a href="#" class="main-nav-link">Meals</a></li>
+          <li><a href="#" class="main-nav-link">Testimonials</a></li>
+          <li><a href="#" class="main-nav-link">Pricing</a></li>
+          <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section-hero">
-        <div class="container grid grid--2-col">
-          <div class="hero-text-box">
+        <div class="hero grid grid--2-col grid--center-v">
+          <div>
             <h1 class="heading-primary">
               A healthy meal delivered to your door, every single day
             </h1>
@@ -35,12 +41,12 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn-fill margin-right-sm"
-              >Start eating well</a
-            >
-            <a href="#" class="btn btn-outline">Learn more &darr;</a>
+            <div class="hero-btn-box flex">
+              <a href="#" class="btn btn-fill">Start eating well</a>
+              <a href="#" class="btn btn-outline">Learn more &darr;</a>
+            </div>
             <div class="delivered-box flex">
-              <div>
+              <div class="flex">
                 <img
                   src="img/customers/customer-1.jpg"
                   alt="Customer profile photo"
@@ -77,40 +83,106 @@
               </p>
             </div>
           </div>
-          <img
-            class="hero-img"
-            src="img/hero.png"
-            alt="Woman enjoying food, food in storage containers and bowls of food on table."
-          />
+          <div>
+            <img
+              src="img/hero.png"
+              alt="Woman enjoying food, food in storage containers and bowls of food on table"
+              class="hero-img"
+            />
+          </div>
         </div>
       </section>
       <section class="section-featured">
-        <div class="featured-logos flex">
-          <img
-            src="img/logos/techcrunch.png"
-            alt="TechCrunch Logo"
-            class="featured-logo"
-          />
-          <img
-            src="img/logos/business-insider.png"
-            alt="Business Insider Logo"
-            class="featured-logo"
-          />
-          <img
-            src="img/logos/the-new-york-times.png"
-            alt="New York Times Logo"
-            class="featured-logo"
-          />
-          <img
-            src="img/logos/forbes.png"
-            alt="Forbes Logo"
-            class="featured-logo"
-          />
-          <img
-            src="img/logos/usa-today.png"
-            alt="USA Today Logo"
-            class="featured-logo"
-          />
+        <div class="featured-box container">
+          <p class="featured-text">As featured in</p>
+          <div class="featured-imgs-box flex">
+            <img
+              src="img/logos/techcrunch.png"
+              alt="TechCrunch logo"
+              class="featured-img"
+            />
+            <img
+              src="img/logos/business-insider.png"
+              alt="Business Insider logo"
+              class="featured-img"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="New York Times logo"
+              class="featured-img"
+            />
+            <img
+              src="img/logos/forbes.png"
+              alt="Forbes logo"
+              class="featured-img"
+            />
+            <img
+              src="img/logos/usa-today.png"
+              alt="USA Today logo"
+              class="featured-img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section-how">
+        <div class="container">
+          <p class="subheading">How it works</p>
+          <h2 class="heading-secondary">
+            Your daily dose of health in 3 simple steps
+          </h2>
+        </div>
+        <div class="how-box container grid grid--2-col grid--center-v">
+          <div>
+            <p class="how-number">01</p>
+            <h3 class="heading-tertiary">
+              Tell us what you like (and what not)
+            </h3>
+            <p class="how-description">
+              Never again waste time thinking about what to eat! Omnifood AI
+              will create a 100% personalized weekly meal plan just for you. It
+              makes sure you get all the nutrients and vitamins you need, no
+              matter what diet you follow!
+            </p>
+          </div>
+          <div class="how-img-box flex">
+            <img
+              src="img/app/app-screen-1.png"
+              alt="Preference selection screen on mobile"
+              class="how-img"
+            />
+          </div>
+          <div class="how-img-box flex">
+            <img
+              src="img/app/app-screen-2.png"
+              alt="Meal approval screen on mobile"
+              class="how-img"
+            />
+          </div>
+          <div>
+            <p class="how-number">02</p>
+            <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+            <p class="how-description">
+              Once per week, approve the meal plan generated for you by Omnifood
+              AI. You can change ingredients, swap entire meals, or even add
+              your own recipes.
+            </p>
+          </div>
+          <div>
+            <p class="how-number">03</p>
+            <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+            <p class="how-description">
+              Best chefs in town will cook your selected meal every day, and we
+              will deliver it to your door whenever works best for you. You can
+              change delivery schedule and address daily!
+            </p>
+          </div>
+          <div class="how-img-box flex">
+            <img
+              src="img/app/app-screen-3.png"
+              alt="Delivery time and place selection screen on mobile"
+              class="how-img"
+            />
+          </div>
         </div>
       </section>
     </main>
