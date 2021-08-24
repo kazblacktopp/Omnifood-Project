@@ -309,12 +309,6 @@
   padding: 9.6rem 9.6rem 0 8rem;
 }
 
-.testimonials-box {
-}
-
-.testimonial {
-}
-
 .testimonial-img {
   width: 6.4rem;
   height: 6.4rem;
@@ -347,4 +341,88 @@
 
 .gallery-img:hover {
   transform: scale(1.1);
+}
+
+/************** MEALS SECTION **************/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.sub-card {
+  padding: 4.8rem 6.4rem;
+  border-radius: 9px;
+  text-align: center;
+  position: relative;
+}
+
+.card-1 {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+}
+
+.card-2 {
+  justify-self: start;
+  background-color: #fdf2e9;
+  overflow: hidden;
+}
+
+.card-2::after {
+  content: "BEST VALUE";
+  position: absolute;
+  top: 35px;
+  right: -60px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 6.4rem;
+  transform: rotate(45deg);
+}
+
+.sub-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #cf711f;
+  margin-bottom: 3.2rem;
+}
+
+.sub-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.sub-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.sub-text {
+  font-size: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.sub-details-list {
+  font-size: 1.8rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.sub-list-item {
+  gap: 1.6rem;
+}
+
+.sub-item-text span {
+  font-weight: 500;
+}
+
+.strike-item {
+  opacity: 0.5;
+  text-decoration: line-through;
 }
