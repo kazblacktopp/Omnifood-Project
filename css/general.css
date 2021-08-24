@@ -21,8 +21,8 @@
 
 - Primary: #e67e22
 
-- Tints: #fdf2e9
-- Shades: #cf711f
+- Tints: #fdf2e9, #eb984e
+- Shades: #cf711f, #45260a
 - Accents: #51cf66, #94d82d, #ffd43b
 - Greys: #333, #555
 
@@ -60,6 +60,10 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   color: #555;
+}
+
+:focus {
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .heading-primary {
@@ -136,6 +140,7 @@ body {
 
 /********** COMPONENETS **********/
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
