@@ -536,3 +536,72 @@
     ),
     url("/img/eating.jpg") top center/cover;
 }
+
+/************** FOOTER **************/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+  color: #777;
+}
+
+.footer-container {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.footer-logo {
+  margin-bottom: 3.2rem;
+}
+
+.socials-box {
+  gap: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.social-link {
+  font-size: 2.4rem;
+  color: inherit;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.footer-nav-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 3.2rem;
+}
+
+.address {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+}
+
+.phone,
+.email {
+  display: block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.phone {
+  margin-bottom: 1.2rem;
+}
+
+.footer-nav {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+  list-style: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
+}
