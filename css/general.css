@@ -24,7 +24,7 @@
 - Tints: #fdf2e9, #eb984e
 - Shades: #cf711f, #45260a
 - Accents: #51cf66, #94d82d, #ffd43b
-- Greys: #333, #555
+- Greys: #333, #555, #6f6f6f, #767676
 
 --- 03 IMAGES ---
 
@@ -74,11 +74,13 @@ body {
 
 .heading-secondary {
   font-size: 4.4rem;
+  line-height: 1.2;
   margin-bottom: 9.6rem;
 }
 
 .heading-tertiary {
   font-size: 3rem;
+  line-height: 1.2;
   margin-bottom: 3.2rem;
 }
 
@@ -87,6 +89,7 @@ body {
 .heading-tertiary {
   letter-spacing: -0.5px;
   color: #333;
+  font-weight: 700;
 }
 
 .subheading {
@@ -96,7 +99,7 @@ body {
   text-transform: uppercase;
   color: #cf711f;
   letter-spacing: 0.75px;
-  padding-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 
 /************ LAYOUT ************/
@@ -107,15 +110,15 @@ body {
   column-gap: 6.4rem;
 }
 
-.grid--2-col {
+.grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid--3-col {
+.grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid--4-col {
+.grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -135,7 +138,11 @@ body {
 }
 
 .margin-bottom-md {
-  margin-bottom: 4.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.center-text {
+  text-align: center;
 }
 
 /********** COMPONENETS **********/
@@ -148,8 +155,10 @@ body {
   font-weight: 600;
   text-decoration: none;
   padding: 1.6rem 3.2rem;
+  border: none;
   border-radius: 9px;
   transition: all 0.3s;
+  font-family: inherit;
 }
 
 .btn-fill:link,
@@ -173,4 +182,26 @@ body {
 .btn-outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.list {
+  flex-direction: column;
+  align-items: initial;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  gap: 1.6rem;
+}
+
+.list-text span {
+  font-weight: 500;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
