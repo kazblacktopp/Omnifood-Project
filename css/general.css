@@ -132,9 +132,8 @@ body {
 }
 
 .container {
-  max-width: 123rem;
+  max-width: 120rem;
   margin: 0 auto;
-  padding: 0 4.8rem;
 }
 
 .margin-bottom-md {

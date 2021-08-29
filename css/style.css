@@ -13,7 +13,7 @@
 
 .main-nav-list {
   list-style: none;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -52,7 +52,7 @@
 }
 
 .hero {
-  max-width: 123.6rem;
+  max-width: 130rem;
   margin: 0 auto;
   column-gap: 9.6rem;
 }
@@ -100,7 +100,7 @@
 /************** FEATURED SECTION **************/
 
 .section-featured {
-  padding: 4.8rem 0 3.2rem;
+  padding: 4.8rem 4.8rem 3.2rem;
   filter: brightness(0);
   opacity: 0.5;
 }
@@ -125,7 +125,7 @@
 /************** HOW SECTION **************/
 
 .section-how {
-  padding: 9.6rem 0;
+  padding: 9.6rem 4.8rem;
 }
 
 .step-number {
@@ -176,7 +176,7 @@
 /************** MEALS SECTION **************/
 
 .section-meals {
-  padding: 9.6rem 0;
+  padding: 9.6rem 4.8rem;
 }
 
 .meal-card {
@@ -278,6 +278,7 @@
 /********** TESTIMONIAL SECTION **********/
 
 .section-testimonials {
+  display: grid;
   background-color: #fdf2e9;
   grid-template-columns: 55fr 45fr;
   gap: 0;
@@ -311,6 +312,7 @@
 }
 
 .gallery-box {
+  display: grid;
   padding: 1.6rem;
   gap: 1.6rem;
 }
@@ -332,7 +334,7 @@
 /************** PRICING SECTION **************/
 
 .section-pricing {
-  padding: 9.6rem 0 4.8rem;
+  padding: 9.6rem 4.8rem 4.8rem;
 }
 
 .pricing-card {
@@ -437,7 +439,7 @@
 /************** CTA SECTION **************/
 
 .section-cta {
-  padding: 4.8rem 0 12.8rem;
+  padding: 4.8rem 4.8rem 12.8rem;
 }
 
 .cta-box {
@@ -471,6 +473,7 @@
 }
 
 .cta-form {
+  display: grid;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
 }
@@ -523,7 +526,7 @@
 /************** FOOTER **************/
 
 .footer {
-  padding: 12.8rem 0;
+  padding: 12.8rem 4.8rem;
   border-top: 1px solid #eee;
 }
 
