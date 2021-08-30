@@ -53,6 +53,7 @@ See `img` folder (app, customers, gallery, logos, meals, favicon, hero, omnifood
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -60,6 +61,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   color: #555;
+  overflow-x: hidden;
 }
 
 :focus {

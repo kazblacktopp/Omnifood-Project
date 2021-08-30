@@ -5,13 +5,18 @@
   height: 9.6rem;
   padding: 0 4.8rem;
   background-color: #fdf2e9;
+  position: relative;
 }
 
 .logo {
   height: 2.2rem;
 }
 
+.main-nav {
+}
+
 .main-nav-list {
+  font-size: 1.8rem;
   list-style: none;
   gap: 4.8rem;
 }
@@ -19,7 +24,6 @@
 .main-nav-link:link,
 .main-nav-link:visited {
   display: inline-block;
-  font-size: 1.8rem;
   text-decoration: none;
   font-weight: 500;
   color: #333;
@@ -42,6 +46,19 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+.nav-list-mobile {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-icon-mobile {
+  display: none;
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
 }
 
 /************** HERO SECTION **************/
@@ -313,6 +330,7 @@
 
 .gallery-box {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   padding: 1.6rem;
   gap: 1.6rem;
 }
@@ -520,7 +538,7 @@
       rgba(235, 151, 78, 0.35),
       rgba(230, 125, 34, 0.35)
     ),
-    url("/img/eating.jpg") top center/cover;
+    url("/img/eating.jpg") center/cover;
 }
 
 /************** FOOTER **************/
