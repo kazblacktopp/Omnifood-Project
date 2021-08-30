@@ -20,7 +20,7 @@
       <a href="#"
         ><img src="img/omnifood-logo.png" alt="Omnifood logo" class="logo"
       /></a>
-      <nav>
+      <nav class="main-nav">
         <ul class="main-nav-list flex">
           <li><a href="#" class="main-nav-link">How it works</a></li>
           <li><a href="#" class="main-nav-link">Meals</a></li>
@@ -29,6 +29,10 @@
           <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
+      <button class="nav-list-mobile">
+        <ion-icon class="nav-icon-mobile" name="menu-outline"></ion-icon>
+        <ion-icon class="nav-icon-mobile" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -241,7 +245,7 @@
               </ul>
             </div>
           </div>
-          <div>
+          <div class="diet-list">
             <h3 class="heading-tertiary">Works with any diet:</h3>
             <ul class="list flex">
               <li class="list-item flex">
@@ -342,7 +346,7 @@
             </figure>
           </div>
         </div>
-        <div class="gallery-box grid--3-cols">
+        <div class="gallery-box">
           <figure class="gallery-img-box">
             <img
               src="img/gallery/gallery-1.jpg"
@@ -436,7 +440,7 @@
             Eating well without breaking the bank
           </h2>
         </div>
-        <div class="container grid grid--2-cols margin-bottom-md">
+        <div class="pricing-box container grid grid--2-cols margin-bottom-md">
           <div class="pricing-card pricing-card--starter">
             <p class="plan-name">Starter</p>
             <p class="plan-price"><span>$</span>399</p>
@@ -664,6 +668,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
