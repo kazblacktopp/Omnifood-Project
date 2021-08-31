@@ -22,11 +22,13 @@
       /></a>
       <nav class="main-nav">
         <ul class="main-nav-list flex">
-          <li><a href="#" class="main-nav-link">How it works</a></li>
-          <li><a href="#" class="main-nav-link">Meals</a></li>
-          <li><a href="#" class="main-nav-link">Testimonials</a></li>
-          <li><a href="#" class="main-nav-link">Pricing</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
+          <li><a href="#how" class="main-nav-link">How it works</a></li>
+          <li><a href="#meals" class="main-nav-link">Meals</a></li>
+          <li>
+            <a href="#testimonials" class="main-nav-link">Testimonials</a>
+          </li>
+          <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
       <button class="nav-list-mobile">
@@ -47,8 +49,8 @@
               nutritional needs.
             </p>
             <div class="hero-btn-box flex">
-              <a href="#" class="btn btn-fill">Start eating well</a>
-              <a href="#" class="btn btn-outline">Learn more &darr;</a>
+              <a href="#cta" class="btn btn-fill">Start eating well</a>
+              <a href="#how" class="btn btn-outline">Learn more &darr;</a>
             </div>
             <div class="delivered-box flex">
               <div class="flex">
@@ -115,7 +117,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -176,7 +178,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container center-text">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -291,7 +293,7 @@
           <a href="#" class="recipes-link">See all recipies &rarr;</a>
         </div>
       </section>
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-column">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -433,7 +435,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container center-text">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -465,7 +467,7 @@
                 </p>
               </li>
             </ul>
-            <a href="#" class="sub-cta btn btn-fill">Start eating well</a>
+            <a href="#cta" class="sub-cta btn btn-fill">Start eating well</a>
           </div>
           <div class="pricing-card pricing-card--complete">
             <p class="plan-name">Complete</p>
@@ -489,7 +491,7 @@
                 <p class="list-text">Get access to latest recipes</p>
               </li>
             </ul>
-            <a href="#" class="btn btn-fill">Start eating well</a>
+            <a href="#cta" class="btn btn-fill">Start eating well</a>
           </div>
         </div>
         <div class="container">
@@ -545,7 +547,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta-box">
             <div class="cta-content">
@@ -621,7 +623,8 @@
             </li>
           </ul>
           <p class="copyright">
-            Copyright © 2027 by Omnifood, Inc. All rights reserved.
+            Copyright © <span class="year">2020</span> by Omnifood, Inc. All
+            rights reserved.
           </p>
         </div>
         <div class="address-col">
@@ -643,7 +646,7 @@
         <div class="nav-col">
           <p class="footer-heading">Account</p>
           <ul class="footer-nav flex">
-            <li><a href="#" class="footer-link">Create account</a></li>
+            <li><a href="#cta" class="footer-link">Create account</a></li>
             <li><a href="#" class="footer-link">Sign in</a></li>
             <li><a href="#" class="footer-link">iOS app</a></li>
             <li><a href="#" class="footer-link">Android app</a></li>
@@ -668,7 +671,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -677,5 +679,10 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
