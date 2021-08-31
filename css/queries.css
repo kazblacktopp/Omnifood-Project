@@ -121,6 +121,7 @@
 
   .nav-list-mobile {
     display: block;
+    z-index: 9999;
   }
 
   .nav-icon-mobile[name="menu-outline"] {
