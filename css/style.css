@@ -139,7 +139,7 @@
 /******************************************/
 
 .section-featured {
-  padding: 4.8rem 4.8rem 3.2rem;
+  padding: 4.8rem 4.8rem 4.8rem;
   filter: brightness(0);
   opacity: 0.5;
 }
@@ -166,7 +166,7 @@
 /******************************************/
 
 .section-how {
-  padding: 9.6rem 4.8rem;
+  padding: 9.6rem 4.8rem 4.8rem;
 }
 
 .step-number {
@@ -219,7 +219,7 @@
 /******************************************/
 
 .section-meals {
-  padding: 9.6rem 4.8rem;
+  padding: 9.6rem 4.8rem 6.4rem;
 }
 
 .meal-card {
@@ -323,11 +323,15 @@
 /******************************************/
 
 .section-testimonials {
+  padding: 6.4rem 0 4.8rem;
+}
+
+.testimonials-container {
   display: grid;
-  background-color: #fdf2e9;
   grid-template-columns: 55fr 45fr;
   gap: 0;
   align-items: center;
+  background-color: #fdf2e9;
 }
 
 .testimonials-column {
@@ -382,7 +386,7 @@
 /******************************************/
 
 .section-pricing {
-  padding: 9.6rem 4.8rem 0;
+  padding: 9.6rem 4.8rem 6.4rem;
 }
 
 .pricing-card {
@@ -462,7 +466,6 @@
 
 .features-box {
   column-gap: 6rem;
-  margin-bottom: 9.6rem;
 }
 
 .feature-icon {
