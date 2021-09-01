@@ -86,7 +86,7 @@
     padding: 3.2rem;
   }
 
-  .section-testimonials {
+  .testimonials-container {
     grid-template-columns: 1fr;
   }
 
@@ -206,14 +206,39 @@
 /* BELOW 560px (Phones) */
 
 @media (max-width: 35em) {
+  .section-hero {
+    padding: 2.4rem 3.2rem 6.4rem;
+  }
+
+  .section-featured {
+    padding-bottom: 0;
+  }
+
+  .section-meals {
+    padding: 9.6rem 4.8rem 3.2rem;
+  }
+
+  .section-testimonials {
+    padding: 6.4rem 0 0;
+  }
+
+  .section-cta {
+    padding-bottom: 9.6rem;
+  }
+
+  .section-how,
+  .section-pricing {
+    padding: 9.6rem 4.8rem 0;
+  }
+
+  .footer {
+    padding-top: 9.6rem;
+  }
+
   .grid--2-cols,
   .grid--3-cols,
   .grid--4-cols {
     grid-template-columns: 1fr;
-  }
-
-  .section-hero {
-    padding: 2.4rem 3.2rem 6.4rem;
   }
 
   .btn,
@@ -277,25 +302,8 @@
   .cta-content {
     padding: 3.2rem;
   }
-
-  .section-testimonials {
-    padding-bottom: 4.8rem;
-  }
-
-  .section-cta {
-    padding-bottom: 9.6rem;
-  }
-
-  .footer {
-    padding-top: 9.6rem;
-  }
-
-  .section-how,
-  .section-meals,
-  .section-pricing {
-    padding: 4.8rem;
-  }
 }
+
 /*
 - FONT SIZE SYSTEM (px)
   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
