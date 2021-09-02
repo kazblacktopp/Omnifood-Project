@@ -1,66 +1,64 @@
 "use strict";
 
-// DOM element selectors
-
-const year = document.querySelector(".year");
-const allLinks = document.querySelectorAll("a:link");
-const sectionHeroEl = document.querySelector(".section-hero");
-
 //////////////////////////////////////////////////
 // Change copyright date in Footer to current year
 
+const yearEl = document.querySelector(".year");
+
 const currentYear = new Date().getFullYear();
-year.textContent = currentYear;
+yearEl.textContent = currentYear;
+
+//////////////////////////////////////////////////
+// Animate mobile navigation
+
+const sectionNavEl = document.querySelector(".section-navigation");
+const mobileNavBtnEl = document.querySelector(".nav-btn-mobile");
+
+mobileNavBtnEl.addEventListener("click", () => {
+  sectionNavEl.classList.toggle("nav-open");
+});
 
 //////////////////////////////////////////////////
 // Create smooth scroll effect for all browsers
 
-allLinks.forEach((link) => {
+const allLinksEl = document.querySelectorAll("a:link");
+
+allLinksEl.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const href = link.getAttribute("href");
 
+    // Scroll back to top
     if (href === "#")
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
 
+    // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({
         behavior: "smooth",
       });
     }
+
+    // Close mobile navigation when link clicked
+    if (link.classList.contains("main-nav-link"))
+      sectionNavEl.classList.toggle("nav-open");
   });
 });
 
 //////////////////////////////////////////////////
-// Create nav menu for mobile devices
+// Create sticky navigation for all browsers
 
-const sectionNavEl = document.querySelector(".section-navigation");
-const mobileNavBtnEl = document.querySelector(".nav-list-mobile");
-
-mobileNavBtnEl.addEventListener("click", () => {
-  sectionNavEl.classList.toggle("nav-open");
-  const navIsOpen = sectionNavEl.classList.contains("nav-open");
-  if (navIsOpen) {
-    document.querySelector(".main-nav-list").addEventListener("click", () => {
-      sectionNavEl.classList.remove("nav-open");
-    });
-  }
-});
-
-//////////////////////////////////////////////////
-// Create sticky navigation for non-mobile devices
+const sectionHeroEl = document.querySelector(".section-hero");
 
 const obs = new IntersectionObserver(
   (entries) => {
-    const isIntersecting = entries[0].isIntersecting;
-
-    if (!isIntersecting) document.body.classList.add("js-sticky");
-
-    if (isIntersecting) document.body.classList.remove("js-sticky");
+    const ent = entries[0];
+    if (!ent.isIntersecting) document.body.classList.add("js-sticky");
+    if (ent.isIntersecting) document.body.classList.remove("js-sticky");
   },
   {
     root: null,
@@ -69,3 +67,29 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+//////////////////////////////////////////////////////////////////////
+// Fixing flexbox gap property missing in some Safari browser versions
+
+const checkFlexGap = () => {
+  // Create flex container with row-gap set
+  const flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = "1px";
+
+  // Create two elements inside the container
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
+
+  // Append container to DOM IOT read scrollHeight
+  document.body.appendChild(flex);
+  const isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+
+  return isSupported;
+};
+
+if (!checkFlexGap()) {
+  document.body.classList.add("no-flex-gap");
+}
