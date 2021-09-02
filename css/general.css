@@ -206,3 +206,13 @@ body {
   height: 3rem;
   color: #e67e22;
 }
+
+/* Margin styles to replace flexbox-gap for non-supporting Safari browser versions */
+
+.no-flex-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flex-gap .list-icon {
+  margin-right: 1.6rem;
+}
