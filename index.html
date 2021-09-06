@@ -576,13 +576,14 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form action="#" class="cta-form grid--2-cols">
+              <form class="cta-form grid--2-cols">
                 <div>
                   <label for="full-name">Full Name</label>
                   <input
                     type="text"
                     id="full-name"
                     placeholder="Jane Smith"
+                    name="full-name"
                     required
                   />
                 </div>
@@ -592,12 +593,13 @@
                     type="text"
                     id="email"
                     placeholder="me@example.com"
+                    name="email"
                     required
                   />
                 </div>
                 <div>
                   <label for="select-where">Where did you hear about us?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" name="select-where" required>
                     <option value="">Please choose one option:</option>
                     <option value="friends">Friends and familiy</option>
                     <option value="youtube">YouTube video</option>
