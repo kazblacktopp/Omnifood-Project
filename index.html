@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+    />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -91,11 +100,15 @@
             </div>
           </div>
           <div>
-            <img
-              src="img/hero.png"
-              alt="Woman enjoying food, food in storage containers and bowls of food on table"
-              class="hero-img"
-            />
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+              <img
+                src="img/hero-min.png"
+                alt="Woman enjoying food, food in storage containers and bowls of food on table"
+                class="hero-img"
+              />
+            </picture>
           </div>
         </div>
       </section>
