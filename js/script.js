@@ -72,20 +72,20 @@ obs.observe(sectionHeroEl);
 // Fixing flexbox gap property missing in some Safari browser versions
 
 const checkFlexGap = () => {
-  // Create flex container with row-gap set
-  const flex = document.createElement('div');
-  flex.style.display = 'flex';
-  flex.style.flexDirection = 'column';
-  flex.style.rowGap = '1px';
+  // Create flex container with flex gap set
+  const flexEl = document.createElement('div');
+  flexEl.style.display = 'flex';
+  flexEl.style.flexDirection = 'column';
+  flexEl.style.gap = '1px';
 
-  // Create two elements inside the container
-  flex.appendChild(document.createElement('div'));
-  flex.appendChild(document.createElement('div'));
+  // Create two child elements inside the flexEl
+  flexEl.appendChild(document.createElement('div'));
+  flexEl.appendChild(document.createElement('div'));
 
-  // Append container to DOM IOT read scrollHeight
-  document.body.appendChild(flex);
-  const isSupported = flex.scrollHeight === 1;
-  flex.parentNode.removeChild(flex);
+  // Append flexEl to DOM IOT read scrollHeight
+  document.body.appendChild(flexEl);
+  const isSupported = flexEl.scrollHeight === 1;
+  flexEl.parentNode.removeChild(flexEl);
 
   return isSupported;
 };
